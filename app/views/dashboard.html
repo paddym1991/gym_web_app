@@ -8,9 +8,9 @@
     Todo List
   </header>
   <div class="ui bulleted list">
-    <div class="ui item"> Make tea</div>
-    <div class="ui item"> Go for snooze</div>
-    <div class="ui item"> Make more tea</div>
+    #{list items:todolist, as:'todo'}
+    <div class="ui item"> ${todo.title} </div>
+    #{/list}
   </div>
 </section>
 
