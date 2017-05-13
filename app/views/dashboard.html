@@ -7,11 +7,23 @@
   <header class="ui header">
     Todo List
   </header>
-  <div class="ui bulleted list">
-    #{list items:todolist, as:'todo'}
-    <div class="ui item"> ${todo.title} </div>
-    #{/list}
-  </div>
+  <table class="ui fixed table">
+    <thead>
+    <tr>
+      <th>Todo</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <div class="ui bulleted list">
+      #{list items:todolist, as:'todo'}
+      <tr>
+        <td> ${todo.title} </td>
+        <td> <a href="/dashboard/deletetodo/${todo.id} " class="ui tiny red button"> Delete </a> </td>
+        #{/list}
+    </div>
+    </tbody>
+  </table>
 </section>
 
 <form class="ui stacked segment form" action="/dashboard/addtodo" method="POST">
