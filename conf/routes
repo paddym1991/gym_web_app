@@ -9,8 +9,11 @@ POST    /dashboard/addtodo                      Dashboard.addTodo
 GET     /dashboard/deletetodo/{id}              Dashboard.deleteTodo
 GET     /admin                                  Admin.index
 GET     /about                                  About.index
-GET    /signup                                  Accounts.signup
-GET    /login                                   Accounts.login
+GET     /signup                                 Accounts.signup
+GET     /login                                  Accounts.login
+POST    /register                               Accounts.register
+POST    /authenticate                           Accounts.authenticate
+GET     /logout                                 Accounts.logout
 
 
 # Ignore favicon requests
