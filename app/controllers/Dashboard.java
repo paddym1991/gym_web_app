@@ -26,9 +26,12 @@ public class Dashboard extends Controller
         redirect("/dashboard");
     }
 
-    public static void deleteTodo(Long id)
+    public static void deleteTodo(Long id, Long todoid)
     {
-        Todo todo = Todo.findById(id);
+        Member member = Member.findById(id);
+        Todo todo = Todo.findById(todoid);
+        member.todolist.remove(todo);
+        member.save();
         todo.delete();
         Logger.info("Deleting " + todo.title);
         redirect("/dashboard");
