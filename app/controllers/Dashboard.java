@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Todo;
+import models.*;
 import play.Logger;
 import play.mvc.Controller;
 
@@ -11,14 +11,17 @@ public class Dashboard extends Controller
     public static void index()
     {
         Logger.info("Rendering Dashboard");
-        List<Todo> todolist = Todo.findAll();
-        render("dashboard.html", todolist);
+        Member member = Accounts.getLoggedInMember();
+        List<Todo> todolist = member.todolist;
+        render("dashboard.html", member, todolist);
     }
 
     public static void addTodo(String title)
     {
+        Member member = Accounts.getLoggedInMember();
         Todo todo = new Todo(title);
-        todo.save();
+        member.todolist.add(todo);
+        member.save();
         Logger.info("Adding Todo" + title);
         redirect("/dashboard");
     }
