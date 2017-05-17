@@ -2,45 +2,75 @@
 #{set title:'Dashboard' /}
 
 #{menu id:"dashboard"/}
-
 <section class="ui raised segment">
-  <header class="ui header">
-    ${member.firstname} ${member.lastname}'s Gym Profile
-  </header>
-  <table class="ui celled table">
-    <thead>
-    <tr>
-      <th>Weight</th>
-      <th>Chest</th>
-      <th>Thigh</th>
-      <th>Upper Arm</th>
-      <th>Hips</th>
-      <th>Waist</th>
-      <th>Comment</th>
-    </tr>
-    </thead>
-    <tbody>
-    <div class="ui bulleted list">
-      #{list items:assessments, as:'assessments'}
-      <tr>
-        <td> ${assessments.weight} </td>
-        <td> ${assessments.chest} </td>
-        <td> ${assessments.thigh} </td>
-        <td> ${assessments.upperArm} </td>
-        <td> ${assessments.waist} </td>
-        <td> ${assessments.hips} </td>
-        <td> ${assessments.comment}</td>
-      </tr>
-        #{/list}
-    </div>
-    </tbody>
-  </table>
-</section>
+  <section class="ui raised segment">
+    <header class="ui header">
+      ${member.firstname} ${member.lastname}'s Gym Profile
+    </header>
+  </section>
 
-<form class="ui stacked segment form" action="/dashboard/addAssessment" method="POST">
-  <div class="field">
-    <label>Title</label>
-    <input placeholder="Title" type="text" name="title">
-  </div>
-  <button class="ui blue submit button">Add Assessment</button>
-</form>
+    <form class="ui raised segment form" action="/dashboard/addAssessment" method="POST">
+      <div class="three fields">
+        <div class="field">
+          <label>Weight</label>
+          <input placeholder="00.00kg" type="number" name="weight">
+        </div>
+        <div class="field">
+          <label>Chest</label>
+          <input placeholder="00.00cm" type="number" name="chest">
+        </div>
+        <div class="field">
+          <label>Thigh</label>
+          <input placeholder="00.00cm" type="number" name="thigh">
+        </div>
+      </div>
+      <div class="three fields">
+        <div class="field">
+          <label>Upper Arm</label>
+          <input placeholder="00.00cm" type="number" name="upperArm">
+        </div>
+        <div class="field">
+          <label>Waist</label>
+          <input placeholder="00.00cm" type="number" name="waist">
+        </div>
+        <div class="field">
+          <label>Hips</label>
+          <input placeholder="00.00cm" type="number" name="hips">
+        </div>
+      </div>
+      <button class="ui blue submit button">Add Assessment</button>
+    </form>
+  </section>
+
+
+   <section class="ui raised segment">
+    <table class="ui celled table">
+      <thead>
+      <tr>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Hips</th>
+        <th>Waist</th>
+        <th>Comment</th>
+      </tr>
+      </thead>
+      <tbody>
+      <div class="ui bulleted list">
+        #{list items:assessments, as:'assessments'}
+        <tr>
+          <td> ${assessments.weight} </td>
+          <td> ${assessments.chest} </td>
+          <td> ${assessments.thigh} </td>
+          <td> ${assessments.upperArm} </td>
+          <td> ${assessments.waist} </td>
+          <td> ${assessments.hips} </td>
+          <td> ${assessments.comment}</td>
+        </tr>
+          #{/list}
+      </div>
+      </tbody>
+    </table>
+  </section>
+
