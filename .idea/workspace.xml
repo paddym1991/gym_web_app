@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c259fe-b97f-4532-96ba-520ae28b974d" name="Default" comment="change to dashboard. layout of assessment table modified">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/Analytics.java" />
+    <list default="true" id="30c259fe-b97f-4532-96ba-520ae28b974d" name="Default" comment="modified dashboard, signup and login layouts.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Trainer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard.html" afterPath="$PROJECT_DIR$/app/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.html" afterPath="$PROJECT_DIR$/app/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/signup.html" afterPath="$PROJECT_DIR$/app/views/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/menu.html" afterPath="$PROJECT_DIR$/app/views/tags/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" afterPath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/data.yml" afterPath="$PROJECT_DIR$/conf/data.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,62 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Dashboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1495017603037" expanded="true" signature="553:914" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Assessment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Assessment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#691#692#0" expanded="false" />
-                <element signature="e#720#721#0" expanded="false" />
-                <element signature="e#764#765#0" expanded="false" />
-                <element signature="e#800#801#0" expanded="false" />
-                <element signature="e#832#833#0" expanded="false" />
-                <element signature="e#860#861#0" expanded="false" />
-                <element signature="e#902#903#0" expanded="false" />
-                <element signature="e#936#937#0" expanded="false" />
-                <element signature="e#968#969#0" expanded="false" />
-                <element signature="e#996#997#0" expanded="false" />
-                <element signature="e#1038#1039#0" expanded="false" />
-                <element signature="e#1072#1073#0" expanded="false" />
-                <element signature="e#1107#1108#0" expanded="false" />
-                <element signature="e#1138#1139#0" expanded="false" />
-                <element signature="e#1186#1187#0" expanded="false" />
-                <element signature="e#1226#1227#0" expanded="false" />
-                <element signature="e#1258#1259#0" expanded="false" />
-                <element signature="e#1286#1287#0" expanded="false" />
-                <element signature="e#1328#1329#0" expanded="false" />
-                <element signature="e#1362#1363#0" expanded="false" />
-                <element signature="e#1393#1394#0" expanded="false" />
-                <element signature="e#1420#1421#0" expanded="false" />
-                <element signature="e#1460#1461#0" expanded="false" />
-                <element signature="e#1492#1493#0" expanded="false" />
-                <element signature="e#1526#1527#0" expanded="false" />
-                <element signature="e#1556#1557#0" expanded="false" />
-                <element signature="e#1602#1603#0" expanded="false" />
-                <element signature="e#1640#1641#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="329">
+              <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -84,8 +30,8 @@
       <file leaf-file-name="data.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/data.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="17">
+              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -95,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/app/utils/Analytics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,16 +57,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tags/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="welcomemenu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tags/welcomemenu.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,11 +67,49 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Member.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/signup.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
-              <caret line="66" column="58" lean-forward="true" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+              <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Accounts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Accounts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#167#168#0" expanded="false" />
+                <element signature="e#204#205#0" expanded="false" />
+                <element signature="e#242#243#0" expanded="false" />
+                <element signature="e#278#279#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Trainer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Trainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -187,13 +161,14 @@
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/models/Assessment.java" />
         <option value="$PROJECT_DIR$/app/controllers/Dashboard.java" />
-        <option value="$PROJECT_DIR$/conf/data.yml" />
         <option value="$PROJECT_DIR$/app/utils/Analytics.java" />
         <option value="$PROJECT_DIR$/app/views/tags/welcomemenu.html" />
         <option value="$PROJECT_DIR$/app/views/tags/menu.html" />
-        <option value="$PROJECT_DIR$/app/views/dashboard.html" />
         <option value="$PROJECT_DIR$/app/views/signup.html" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/conf/data.yml" />
+        <option value="$PROJECT_DIR$/app/models/Trainer.java" />
       </list>
     </option>
   </component>
@@ -910,7 +885,7 @@
       <workItem from="1494671579151" duration="21277000" />
       <workItem from="1494945781942" duration="1255000" />
       <workItem from="1494947545192" duration="109000" />
-      <workItem from="1494961780615" duration="23211000" />
+      <workItem from="1494961780615" duration="26147000" />
     </task>
     <task id="LOCAL-00001" summary="still reviewing tutorials">
       <created>1494706990972</created>
@@ -961,11 +936,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495022227362</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modified dashboard, signup and login layouts.">
+      <created>1495035513144</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1495035513144</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48531000" />
+    <option name="totallyTimeSpent" value="51467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1045,21 +1027,14 @@
     <MESSAGE value="still relearning code&#10;delete now working" />
     <MESSAGE value="modified classes to change app to gym app.&#10;changed Todo class to Assessment class." />
     <MESSAGE value="change to dashboard. layout of assessment table modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to dashboard. layout of assessment table modified" />
+    <MESSAGE value="modified dashboard, signup and login layouts." />
+    <option name="LAST_COMMIT_MESSAGE" value="modified dashboard, signup and login layouts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1308,16 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Accounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1378,24 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/data.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1474,7 +1421,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
-          <caret line="66" column="58" lean-forward="true" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+          <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1487,18 +1434,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/Analytics.java">
+    <entry file="file://$PROJECT_DIR$/app/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="329">
+          <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Accounts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="509">
+          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#167#168#0" expanded="false" />
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#242#243#0" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/Analytics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Trainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
           <folding />
         </state>
       </provider>

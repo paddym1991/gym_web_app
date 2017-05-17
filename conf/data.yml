@@ -16,19 +16,46 @@ Assessment(a2):
   hips: 29
   comment: Good work. Almost there.
 
+Assessment(a3):
+  weight: 143.75
+  chest: 37.9
+  thigh: 33
+  upperArm: 43
+  waist: 40
+  hips: 39.5
+  comment: Good results.
+
+Assessment(a4):
+  weight: 54
+  chest: 22
+  thigh: 19.5
+  upperArm: 17.2
+  waist: 25
+  hips: 28
+  comment: Keep the pace up for the week.
+
 Member(m1):
   firstname: homer
   lastname: simpson
   email: homer@simpson.com
   password: secret
+  address: Springfield
+  Gender: Male
+  Height: 1.64
+  startingWeight: 145
   assessments:
   - a1
-  - a2
+  - a3
 
 Member(m2):
   firstname: marge
   lastname: simpson
   email: marge@simpson.com
   password: secret
+  address: Springfield
+  Gender: Female
+  Height: 1.4
+  startingWeight: 60
   assessments:
   - a2
+  - a4
