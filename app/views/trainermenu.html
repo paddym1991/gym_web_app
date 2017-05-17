@@ -4,10 +4,14 @@
 #{trainerpanel id:"trainermenu"/}
 
 <section class="ui raised segment">
-    <section class="ui raised segment">
-        <header class="ui header">
-            Members
-        </header>
-    </section>
+    <header class="ui header">
+        Members
+    </header>
+        <div class="ui bulleted list">
+            #{list items:members, as:'members'}
+                <a href="#"> ${member.firstname} ${member.lastname} </a>
+                <a href="/trainermenu/${trainer.id}/deleteMember/${members.id} " class="ui tiny red button"> Delete </a>
+            #{/list}
+        </div>
 
 </section>
