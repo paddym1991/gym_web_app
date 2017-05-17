@@ -23,6 +23,7 @@ Member(m1):
   password: secret
   assessments:
   - a1
+  - a2
 
 Member(m2):
   firstname: marge
