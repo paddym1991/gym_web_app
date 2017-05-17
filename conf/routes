@@ -5,15 +5,19 @@
 # Home page
 GET     /                                       Start.index
 GET     /dashboard                              Dashboard.index
-POST    /dashboard/addtodo                      Dashboard.addTodo
-GET     /dashboard/deletetodo/{id}              Dashboard.deleteTodo
+POST    /dashboard/addAssessment                      Dashboard.addAssessment
+GET     /dashboard/{id}/deleteAssessment/{assessmentId}     Dashboard.deleteAssessment
 GET     /admin                                  Admin.index
 GET     /about                                  About.index
-GET     /signup                                 Accounts.signup
+
 GET     /login                                  Accounts.login
+GET     /logout                                 Accounts.logout
+
+GET     /signup                                 Accounts.signup
 POST    /register                               Accounts.register
 POST    /authenticate                           Accounts.authenticate
-GET     /logout                                 Accounts.logout
+
+
 
 
 # Ignore favicon requests
