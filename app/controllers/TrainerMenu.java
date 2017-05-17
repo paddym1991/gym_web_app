@@ -13,9 +13,9 @@ public class TrainerMenu extends Controller {
 
     public static void index()
     {
-        Logger.info("Rendering Dashboard");
+        Logger.info("Rendering TrainerMenu");
         Trainer trainer = Accounts.getLoggedInTrainer();
         List<Member> members = trainer.members;
-        render("trainerMenu.html", trainer, members);
+        render("trainermenu.html", trainer, members);
     }
 }

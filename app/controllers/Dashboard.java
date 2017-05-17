@@ -21,7 +21,7 @@ public class Dashboard extends Controller
         Assessment newAssessment = new Assessment(weight, chest, thigh, upperArm, waist, hips, comment);
         member.assessments.add(newAssessment);
         member.save();
-        Logger.info("Adding Assessment" + weight + chest + thigh + upperArm + waist + hips);
+        Logger.info("Adding Assessment");
         redirect("/dashboard");
     }
 

@@ -37,7 +37,7 @@ public class Accounts extends Controller
         else if ((trainer != null) && (trainer.checkPassword(password) == true)) {
             Logger.info("Authentication successful");
             session.put("logged_in_Trainerid", trainer.id);
-            redirect("/trainerMenu");
+            redirect("/trainermenu");
         }
         else
         {
