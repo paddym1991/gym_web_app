@@ -27,13 +27,20 @@ public class Accounts extends Controller
     public static void authenticate(String email, String password)
     {
         Logger.info("Attempting to authenticate with " + email + ":" + password);
-
+        Trainer trainer = Trainer.findByEmail(email);
         Member member = Member.findByEmail(email);
         if ((member != null) && (member.checkPassword(password) == true)) {
             Logger.info("Authentication successful");
             session.put("logged_in_Memberid", member.id);
             redirect ("/dashboard");
-        } else {
+        }
+        else if ((trainer != null) && (trainer.checkPassword(password) == true)) {
+            Logger.info("Authentication successful");
+            session.put("logged_in_Trainerid", trainer.id);
+            redirect("/trainerMenu");
+        }
+        else
+        {
             Logger.info("Authentication failed");
             redirect("/login");
         }
@@ -55,5 +62,16 @@ public class Accounts extends Controller
             login();
         }
         return member;
+    }
+
+    public static Trainer getLoggedInTrainer() {
+        Trainer trainer = null;
+        if (session.contains("logged_in_Trainerid")) {
+            String trainerId = session.get("logged_in_Trainerid");
+            trainer = Trainer.findById(Long.parseLong(trainerId));
+        } else {
+            login();
+        }
+        return trainer;
     }
 }

@@ -59,3 +59,9 @@ Member(m2):
   assessments:
   - a2
   - a4
+
+Trainer(t1):
+  firstname: Huge
+  lastname: Bigmannson
+  email: imlarge@steroids.com
+  password: squats

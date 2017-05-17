@@ -17,6 +17,8 @@ GET     /signup                                 Accounts.signup
 POST    /register                               Accounts.register
 POST    /authenticate                           Accounts.authenticate
 
+GET     /trainermenu                            trainermenu.index
+
 
 
 
