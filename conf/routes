@@ -18,7 +18,11 @@ POST    /register                               Accounts.register
 POST    /authenticate                           Accounts.authenticate
 
 GET     /trainermenu                            TrainerMenu.index
-GET     /trainermemassess                       TrainerMemAssess.index
+GET     /trainermenu/{trainerid}/trainermemassess/{memberid}              TrainerMemAssess.index
+GET     /trainermemassess/{memberid}                       TrainerMemAssess.index
+GET     /trainermenu/{trainerid}/trainermemassess/{memberid}              Dashboard.trainermemassess
+
+GET     /trainermemassess/trainerComment/{memberid}/{assessmentid}        TrainerMemAssess.trainerComment
 
 
 

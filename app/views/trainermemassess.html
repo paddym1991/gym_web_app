@@ -41,38 +41,7 @@
         </div>
     </div>
 
-    <form class="ui raised segment form" action="/dashboard/addAssessment" method="POST">
-        <div class="three fields">
-            <div class="field">
-                <label>Weight</label>
-                <input placeholder="00.00kg" type="number" name="weight">
-            </div>
-            <div class="field">
-                <label>Chest</label>
-                <input placeholder="00.00cm" type="number" name="chest">
-            </div>
-            <div class="field">
-                <label>Thigh</label>
-                <input placeholder="00.00cm" type="number" name="thigh">
-            </div>
-        </div>
-        <div class="three fields">
-            <div class="field">
-                <label>Upper Arm</label>
-                <input placeholder="00.00cm" type="number" name="upperArm">
-            </div>
-            <div class="field">
-                <label>Waist</label>
-                <input placeholder="00.00cm" type="number" name="waist">
-            </div>
-            <div class="field">
-                <label>Hips</label>
-                <input placeholder="00.00cm" type="number" name="hips">
-            </div>
-        </div>
-        <button class="ui blue submit button">Add Assessment</button>
-    </form>
-
+    #{list items:assessments, as:'assessments'}
     <section class="ui raised segment">
         <table class="ui celled table">
             <thead>
@@ -87,8 +56,6 @@
             </tr>
             </thead>
             <tbody>
-            <div class="ui bulleted list">
-                #{list items:assessments, as:'assessments'}
                 <tr>
                     <td> ${assessments.weight} </td>
                     <td> ${assessments.chest} </td>
@@ -97,11 +64,17 @@
                     <td> ${assessments.waist} </td>
                     <td> ${assessments.hips} </td>
                     <td> ${assessments.comment}</td>
-                    <td> <a href="/dashboard/${member.id}/deleteAssessment/${assessments.id} " class="ui tiny red button"> Delete </a>  </td>
+                    <td> <a href="/dashboard/${member.id}/deleteAssessment/${assessments.id} " class="ui tiny red button"> Delete </a>                      </td>
                 </tr>
-                #{/list}
-            </div>
             </tbody>
         </table>
+        <form class="ui form" action="/trainermemassess/trainerComment/${member.id}/${assessments.id}" method="POST">
+            <div class="field">
+                <label>Comment</label>
+                <input type="text" name="comment" placeholder="Comment">
+            </div>
+            <button class="ui blue submit button" type="submit">Update</button>
+        </form>
     </section>
+    #{/list}
 </section>

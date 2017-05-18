@@ -11,28 +11,30 @@ import java.util.*;
  */
 public class TrainerMemAssess extends Controller {
 
-    public static void index()
+
+    public static void index(Long memberid)
     {
         Logger.info("Rendering Dashboard");
         Trainer trainer = Accounts.getLoggedInTrainer();
-        List<Member> members = Member.findAll();
-        render("trainermemassess.html", trainer, members);
+        Member member = Member.findById(memberid);
+        List<Assessment> assessments = member.assessments;
+        render("trainermemassess.html", trainer, member, assessments);
     }
 
-    public static void index(Long memberid) {
-
-        Logger.info("Rendering Dashboard");
+    public static void trainerComment(Long memberid, Long assessmentid, String comment)
+    {
         Trainer trainer = Accounts.getLoggedInTrainer();
         Member member = Member.findById(memberid);
 
         List<Assessment> assessments = member.assessments;
+        Assessment commentAssessment = Assessment.findById(assessmentid);
 
-        double bmi = Member.calculateBMI();
+        commentAssessment.setComment(comment);
+        commentAssessment.save();
+        member.save();
 
-        String bmiCategory = Member.determineBMICategory();
-
-       // String weightIndicator = weightIndicatorColour(bmiCategory);
-
-        render("trainermemassess.html", member, assessments, bmi, bmiCategory);
+        Logger.info("Adding Comment!");
+        render("trainermemassess.html", trainer, member, assessments);
     }
+
 }
