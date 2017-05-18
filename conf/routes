@@ -18,6 +18,7 @@ POST    /register                               Accounts.register
 POST    /authenticate                           Accounts.authenticate
 
 GET     /trainermenu                            TrainerMenu.index
+GET     /trainermemassess                       TrainerMemAssess.index
 
 
 

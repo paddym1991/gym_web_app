@@ -76,3 +76,6 @@ Trainer(t1):
   lastname: Bigmannson
   email: imlarge@steroids.com
   password: squats
+  members:
+  - m1
+  - m2

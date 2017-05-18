@@ -16,17 +16,23 @@ public class TrainerMemAssess extends Controller {
         Logger.info("Rendering Dashboard");
         Trainer trainer = Accounts.getLoggedInTrainer();
         List<Member> members = Member.findAll();
-        render("trainermenu.html", trainer, members);
+        render("trainermemassess.html", trainer, members);
     }
 
-    public static void deleteMember(Long id, Long memberId)
-    {
-        Trainer trainer = Trainer.findById(id);
-        Member delMember = Member.findById(memberId);
-        trainer.members.remove(delMember);
-        trainer.save();
-        delMember.delete();
-        Logger.info("Deleting ");
-        redirect("/trainermenu");
+    public static void index(Long memberid) {
+
+        Logger.info("Rendering Dashboard");
+        Trainer trainer = Accounts.getLoggedInTrainer();
+        Member member = Member.findById(memberid);
+
+        List<Assessment> assessments = member.assessments;
+
+        double bmi = Member.calculateBMI();
+
+        String bmiCategory = Member.determineBMICategory();
+
+       // String weightIndicator = weightIndicatorColour(bmiCategory);
+
+        render("trainermemassess.html", member, assessments, bmi, bmiCategory);
     }
 }
