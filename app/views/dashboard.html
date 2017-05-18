@@ -15,7 +15,7 @@
       </div>
       <div class="statistic">
         <div class="value">
-          <i class="dashboard icon"></i>
+          <i class="${member.isIdealBodyWeight()} dashboard icon"></i>
         </div>
         <div class="label">
           IDEAL WEIGHT INDICATOR
@@ -24,7 +24,7 @@
       <div class="statistic">
         <div class="value">
             <i class="heartbeat icon"></i>
-          PUT MY BMI HER
+          ${member.calculateBMI()}
         </div>
         <div class="label">
           BMI
@@ -35,7 +35,7 @@
           <i class="doctor icon"></i>
         </div>
         <div class="label">
-          PUT MY BMI CATEGORY HERE
+          ${member.determineBMICategory()}
         </div>
       </div>
     </div>

@@ -8,8 +8,7 @@ public class Analytics {
 
     public static double calculateBMI (Member member, Assessment assessment)
     {
-        double bmiValue = toTwoDecimalPlaces(member.getStartingWeight() / (member.getHeight() * member.getHeight()));
-        return bmiValue;
+        return toTwoDecimalPlaces(assessment.getWeight() / (member.getHeight() * member.getHeight()));
     }
 
     public static double toTwoDecimalPlaces(double num)
