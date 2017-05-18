@@ -11,6 +11,9 @@ GET     /trainermenu/{id}/deleteMember/{memberid}                               
 GET     /admin                                  Admin.index
 GET     /about                                  About.index
 
+GET     /accountsettings                        AccountSettings.index
+POST    /accountsettings/update                 AccountSettings.update
+
 GET     /login                                  Accounts.login
 GET     /logout                                 Accounts.logout
 

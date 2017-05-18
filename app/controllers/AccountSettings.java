@@ -15,12 +15,12 @@ public class AccountSettings extends Controller {
     {
         Logger.info("Rendering accountsettings");
         Member member = Accounts.getLoggedInMember();
-        render("accountsettings.html", member,);
+        render("accountsettings.html", member);
     }
 
     public static void update(String firstname, String lastname, String email, String password, String address, String gender, double height, double startingWeight)
     {
-        Member member = getLoggedInMember();
+        Member member = Accounts.getLoggedInMember();
         member.setFirstname(firstname);
         member.setLastname(lastname);
         member.setEmail(email);
@@ -32,7 +32,7 @@ public class AccountSettings extends Controller {
         member.save();
 
         Logger.info(member.firstname + "'s Details Updated");
-        redirect("/settings");
+        redirect("/acountsettings");
     }
 
 }
