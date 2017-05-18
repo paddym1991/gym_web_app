@@ -35,6 +35,16 @@ public class Member extends Model
         this.startingWeight = startingWeight;
     }
 
+    public static Member findByEmail(String email)
+    {
+        return find("email", email).first();
+    }
+
+    public boolean checkPassword(String password)
+    {
+        return this.password.equals(password);
+    }
+
     public static double toTwoDecimalPlaces(double num)
     {
         return (int)(num * 100) / 100.0;
@@ -247,13 +257,5 @@ public class Member extends Model
         this.startingWeight = startingWeight;
     }
 
-    public static Member findByEmail(String email)
-    {
-        return find("email", email).first();
-    }
 
-    public boolean checkPassword(String password)
-    {
-        return this.password.equals(password);
-    }
 }

@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Assessment;
+import models.*;
 import play.Logger;
 import play.mvc.Controller;
 
