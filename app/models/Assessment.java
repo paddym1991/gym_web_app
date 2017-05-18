@@ -3,6 +3,8 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 @Entity
 public class Assessment extends Model {
@@ -14,6 +16,7 @@ public class Assessment extends Model {
     private double waist;
     private double hips;
     private String comment;
+    private Date date;
 
 
 
@@ -26,6 +29,22 @@ public class Assessment extends Model {
         this.waist = waist;
         this.hips = hips;
         this.comment = comment;
+        this.date = new Date();
+    }
+
+    public String getDate() {
+        String latestDate;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        if(date != null){
+            latestDate = dateFormat.format(date);
+        }
+        else{
+            latestDate = "null";
+        }
+
+        return latestDate;
+       // latestDate = dateFormat.format(date);
+       // return latestDate;
     }
 
     public double getWeight() {

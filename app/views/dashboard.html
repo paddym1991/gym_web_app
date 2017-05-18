@@ -77,6 +77,7 @@
     <table class="ui celled table">
       <thead>
         <tr>
+          <td>Date</td>
           <th>Weight</th>
           <th>Chest</th>
           <th>Thigh</th>
@@ -90,6 +91,7 @@
         <div class="ui bulleted list">
           #{list items:assessments, as:'assessments'}
           <tr>
+            <td> ${assessments.date} </td>
             <td> ${assessments.weight} </td>
             <td> ${assessments.chest} </td>
             <td> ${assessments.thigh} </td>
