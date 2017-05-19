@@ -19,11 +19,11 @@ public class TrainerMenu extends Controller {
         render("trainermenu.html", trainer, members);
     }
 
-    public static void deleteMember(Long id, Long memberId)
+    public static void deleteMember(Long trainerid, Long memberid)
     {
-        Trainer trainer = Trainer.findById(id);
+        Trainer trainer = Trainer.findById(trainerid);
         List<Member> members = Member.findAll();
-        Member delMember = Member.findById(memberId);
+        Member delMember = Member.findById(memberid);
         trainer.members.remove(delMember);
         trainer.save();
         delMember.delete();

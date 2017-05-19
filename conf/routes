@@ -7,7 +7,7 @@ GET     /                                       Start.index
 GET     /dashboard                              Dashboard.index
 POST    /dashboard/addAssessment                      Dashboard.addAssessment
 GET     /dashboard/{id}/deleteAssessment/{assessmentId}     Dashboard.deleteAssessment
-GET     /trainermenu/{id}/deleteMember/{memberid}                                TrainerMenu.deleteMember
+GET     /trainermenu/{trainerid}/deleteMember/{memberid}                                TrainerMenu.deleteMember
 GET     /admin                                  Admin.index
 GET     /about                                  About.index
 
