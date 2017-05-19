@@ -16,11 +16,11 @@ public class Assessment extends Model {
     private double waist;
     private double hips;
     private String comment;
-    private Date date;
+    public Date date;
 
 
 
-    public Assessment(double weight, double chest, double thigh, double upperArm, double waist, double hips, String comment)
+    public Assessment(double weight, double chest, double thigh, double upperArm, double waist, double hips)
     {
         this.weight = weight;
         this.chest = chest;

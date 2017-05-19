@@ -16,9 +16,9 @@ public class Dashboard extends Controller
         render("dashboard.html", member, assessments);
     }
 
-    public static void addAssessment(double weight, double chest, double thigh, double upperArm, double waist, double hips, String comment) {
+    public static void addAssessment(double weight, double chest, double thigh, double upperArm, double waist, double hips) {
         Member member = Accounts.getLoggedInMember();
-        Assessment newAssessment = new Assessment(weight, chest, thigh, upperArm, waist, hips, comment);
+        Assessment newAssessment = new Assessment(weight, chest, thigh, upperArm, waist, hips);
         member.assessments.add(newAssessment);
         member.save();
         Logger.info("Adding Assessment" + weight + chest + thigh + upperArm + waist + hips);
