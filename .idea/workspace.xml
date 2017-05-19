@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c259fe-b97f-4532-96ba-520ae28b974d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/ProcFile" />
+    <list default="true" id="30c259fe-b97f-4532-96ba-520ae28b974d" name="Default" comment="Preparing to deploy and some javaDoc">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/About.java" afterPath="$PROJECT_DIR$/app/controllers/About.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AccountSettings.java" afterPath="$PROJECT_DIR$/app/controllers/AccountSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Accounts.java" afterPath="$PROJECT_DIR$/app/controllers/Accounts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Admin.java" afterPath="$PROJECT_DIR$/app/controllers/Admin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Start.java" afterPath="$PROJECT_DIR$/app/controllers/Start.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/TrainerMemAssess.java" afterPath="$PROJECT_DIR$/app/controllers/TrainerMemAssess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/TrainerMenu.java" afterPath="$PROJECT_DIR$/app/controllers/TrainerMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/application.conf" afterPath="$PROJECT_DIR$/conf/application.conf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +39,8 @@
       <file leaf-file-name="Assessment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/Assessment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -903,7 +893,7 @@
       <workItem from="1494671579151" duration="21277000" />
       <workItem from="1494945781942" duration="1255000" />
       <workItem from="1494947545192" duration="109000" />
-      <workItem from="1494961780615" duration="104421000" />
+      <workItem from="1494961780615" duration="104603000" />
     </task>
     <task id="LOCAL-00001" summary="still reviewing tutorials">
       <created>1494706990972</created>
@@ -1073,11 +1063,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495170184450</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Preparing to deploy and some javaDoc">
+      <created>1495173115390</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1495173115391</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129741000" />
+    <option name="totallyTimeSpent" value="129923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1143,7 +1140,8 @@
     <MESSAGE value="signup working and update working" />
     <MESSAGE value="implementing trend graph in assessments" />
     <MESSAGE value="A few UX changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="A few UX changes." />
+    <MESSAGE value="Preparing to deploy and some javaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing to deploy and some javaDoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1556,8 +1554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Assessment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
