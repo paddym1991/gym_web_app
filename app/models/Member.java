@@ -52,7 +52,13 @@ public class Member extends Model
 
     public Assessment latestAssessment()
     {
-        return assessments.get(assessments.size() - 1);
+        if (assessments.size() != 0) {
+            return assessments.get(assessments.size() - 1);
+        }
+        else
+        {
+            return null;
+        }
     }
 
     public double calculateBMI()
@@ -190,6 +196,28 @@ public class Member extends Model
         else
         {
             return "red";
+        }
+    }
+
+    public double idealBodyWeight()
+    {
+        double heightToInches = convertHeightMetresToInches();
+        int fiveFeet = 60;
+        double idealBodyWeight = 0.0;
+        double weight = 0.0;
+
+        if (heightToInches <= fiveFeet) {
+            if (gender.equals("Male")) {
+                idealBodyWeight = 50;
+            } else {
+                idealBodyWeight = 45.5;
+            }
+        } else {
+            if (gender.equals("Male")) {
+                idealBodyWeight = 50 + (2.3 * (heightToInches - fiveFeet));
+            } else {
+                idealBodyWeight = 45.5 + (2.3 * (heightToInches - fiveFeet));
+            }
         }
     }
 

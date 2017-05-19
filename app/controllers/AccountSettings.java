@@ -32,7 +32,7 @@ public class AccountSettings extends Controller {
         member.save();
 
         Logger.info(member.firstname + "'s Details Updated");
-        redirect("/acountsettings");
+        redirect("/dashboard");
     }
 
 }

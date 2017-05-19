@@ -41,7 +41,6 @@ public class Assessment extends Model {
         else{
             latestDate = "null";
         }
-
         return latestDate;
        // latestDate = dateFormat.format(date);
        // return latestDate;
