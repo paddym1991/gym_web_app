@@ -199,6 +199,41 @@ public class Member extends Model
         }
     }
 
+    public String calculateTrend(Assessment assessment)
+    {
+        double previousWeight = 0;
+        double idealBodyWeight = idealBodyWeight();
+
+        //List<Assessment> testedAssessments = new ArrayList<Assessment>(assessments);
+        Assessment previousAssessment;
+        if (assessments.size() > 0)
+        {
+
+            if (assessments.size() > 1) {
+                previousAssessment = assessments.get(assessments.size() - 2);
+                previousWeight = previousAssessment.getWeight();
+            } else if (assessments.size() == 1) {
+                previousWeight = startingWeight;
+            }
+            Assessment currentAssessment = latestAssessment();
+            double currentWeight = currentAssessment.getWeight();
+            double weightDiffCurrent = currentWeight - idealBodyWeight;
+            double weightDiffPrevious = previousWeight - idealBodyWeight;
+
+            if (weightDiffCurrent > weightDiffPrevious) {
+                return "red tag";
+            } else if (weightDiffCurrent < weightDiffPrevious) {
+                return "green tag";
+            } else {
+                return "blue tag";
+            }
+        }
+        else
+        {
+            return "black tag";
+        }
+    }
+
     public double idealBodyWeight()
     {
         double heightToInches = convertHeightMetresToInches();
@@ -206,19 +241,28 @@ public class Member extends Model
         double idealBodyWeight = 0.0;
         double weight = 0.0;
 
-        if (heightToInches <= fiveFeet) {
+        if (heightToInches <= fiveFeet)
+        {
             if (gender.equals("Male")) {
                 idealBodyWeight = 50;
-            } else {
+            }
+            else
+            {
                 idealBodyWeight = 45.5;
             }
-        } else {
-            if (gender.equals("Male")) {
+        }
+        else
+        {
+            if (gender.equals("Male"))
+            {
                 idealBodyWeight = 50 + (2.3 * (heightToInches - fiveFeet));
-            } else {
+            }
+            else
+            {
                 idealBodyWeight = 45.5 + (2.3 * (heightToInches - fiveFeet));
             }
         }
+        return idealBodyWeight;
     }
 
     public String getFirstname() {

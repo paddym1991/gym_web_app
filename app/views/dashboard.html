@@ -84,6 +84,7 @@
           <th>Upper Arm</th>
           <th>Waist</th>
           <th>Hips</th>
+          <th>Trend</th>
           <th>Comment</th>
         </tr>
       </thead>
@@ -98,6 +99,9 @@
             <td> ${assessments.upperArm} </td>
             <td> ${assessments.waist} </td>
             <td> ${assessments.hips} </td>
+            <td>
+                <div class="ui ${member.calculateTrend(assessment)} label"></div>
+            </td>
             <td> ${assessments.comment}</td>
             <td> <a href="/dashboard/${member.id}/deleteAssessment/${assessments.id} " class="ui tiny red button"> Delete </a>  </td>
           </tr>

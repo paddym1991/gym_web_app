@@ -34,7 +34,7 @@ public class Assessment extends Model {
 
     public String getDate() {
         String latestDate;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         if(date != null){
             latestDate = dateFormat.format(date);
         }

@@ -1,10 +1,15 @@
 <nav class="ui menu">
-  <header class="ui header item"> <a href="#"> Skinny Pete's Gym </a></header>
+  <header class="ui header item"> <a href="/dashboard"> Skinny Pete's Gym </a></header>
   <div class="right menu">
     <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
     <a id="about" class="item" href="/about"> About </a>
-    <a id="logout" class="item" href="/logout"> Logout </a>
-    <a id="profile" class="item" href="/accountsettings"> <i class="user icon"></i></a>
+    <div class="ui simple dropdown item">
+      <i class="user icon"></i>
+        <div class="menu">
+      <a id="logout" class="item" href="/logout"> Logout </a>
+      <a id="profile" class="item" href="/accountsettings"> Edit Account </a>
+        </div>
+    </div>
   </div>
 </nav>
 
