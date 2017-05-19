@@ -9,6 +9,9 @@ import models.*;
 
 public class About extends Controller
 {
+  /**
+   *
+   */
   public static void index()
   {
     Logger.info("Rendering about");

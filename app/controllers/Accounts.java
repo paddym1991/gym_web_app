@@ -4,18 +4,43 @@ import models.*;
 import play.Logger;
 import play.mvc.Controller;
 
+/**
+ * Manages all accounts
+ *
+ * @author Paddy Murphy
+ * @version 18/05/2017
+ */
 public class Accounts extends Controller
 {
+    /**
+     * renders signup page
+     */
     public static void signup()
     {
         render("signup.html");
     }
 
+    /**
+     * renders login page
+     */
     public static void login()
     {
         render("login.html");
     }
 
+    /**
+     *
+     * Creates and Saves a copy of a member
+     *
+     * @param firstname member's firstname
+     * @param lastname member's last name
+     * @param email member's email
+     * @param password member's password
+     * @param address member's address
+     * @param gender member's gender
+     * @param height member's height
+     * @param startingWeight member's starting weight
+     */
     public static void register(String firstname, String lastname, String email, String password, String address, String gender, double height, double startingWeight)
     {
         Logger.info("Registering new user " + email);
@@ -24,6 +49,11 @@ public class Accounts extends Controller
         redirect("/");
     }
 
+    /**
+     *
+     * @param email
+     * @param password
+     */
     public static void authenticate(String email, String password)
     {
         Logger.info("Attempting to authenticate with " + email + ":" + password);
@@ -46,12 +76,19 @@ public class Accounts extends Controller
         }
     }
 
+    /**
+     *
+     */
     public static void logout()
     {
         session.clear();
         redirect ("/");
     }
 
+    /**
+     *
+     * @return
+     */
     public static Member getLoggedInMember()
     {
         Member member = null;
@@ -64,6 +101,10 @@ public class Accounts extends Controller
         return member;
     }
 
+    /**
+     *
+     * @return
+     */
     public static Trainer getLoggedInTrainer() {
         Trainer trainer = null;
         if (session.contains("logged_in_Trainerid")) {

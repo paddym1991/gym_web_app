@@ -7,10 +7,16 @@ import play.mvc.Controller;
 import java.util.*;
 
 /**
- * Created by Paddym1991 on 17/05/2017.
+ * Provides a model of the Trainer's Dashboard and all its associated properties
+ *
+ * @author Paddy Murphy
+ * @version 18/05/2017
  */
 public class TrainerMenu extends Controller {
 
+    /**
+     * Renders trainermenu and the logged in trainers details and all members associated with the trainer
+     */
     public static void index()
     {
         Logger.info("Rendering Admin");
@@ -19,6 +25,12 @@ public class TrainerMenu extends Controller {
         render("trainermenu.html", trainer, members);
     }
 
+    /**
+     * deletes the member that is passed into the method
+     *
+     * @param trainerid id of current logged in trainer
+     * @param memberid id of member passed in
+     */
     public static void deleteMember(Long trainerid, Long memberid)
     {
         Trainer trainer = Trainer.findById(trainerid);
